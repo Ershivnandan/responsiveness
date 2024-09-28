@@ -47,7 +47,8 @@ nav {
 }
 .slideDown{
     display: none;
-    
+    display: block;
+    z-index: 9;
 }
 
 .loginButtonOuter {
@@ -67,6 +68,112 @@ nav {
 .section1Main p {
     font-size: 22px;
     color: #21191B;
+}
+
+
+/* Section 2  */
+
+.section2{
+  margin: 5rem 0 5rem 5rem;
+}
+
+.section2Main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.sec2gridLeft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2gridLeftUl{
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.sec2gridLeftUl li{
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.sec2gridLeft h2{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sec2gridRight{
+  display: flex;
+  justify-content: center;
+}
+/* form style  */
+
+.formContainer {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formContainer h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #21191B;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkboxContainer input {
+  margin-right: 10px;
+  margin-top: -0.5rem;
+  cursor: pointer;
+  width: 20px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px 16px; 
+  background-color: #ED0331;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background-color: #830720;
 }
 
 @media (max-width: 480px) {
@@ -125,5 +232,20 @@ nav {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
+  }
+
+  .section1Main{
+    padding: 0;
+  }
+
+  /* section 2  */
+
+  .section2{
+    margin: 5rem 1rem 1rem 1rem;
+  }
+  .section2Main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
   }
 }
