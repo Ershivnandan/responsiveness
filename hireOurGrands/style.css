@@ -45,65 +45,63 @@ nav {
   text-transform: uppercase;
   background: #fff;
 }
-.slideDown{
-    display: none;
-    display: block;
-    z-index: 9;
+.slideDown {
+  display: none;
+  display: block;
+  z-index: 9;
 }
 
 .loginButtonOuter {
   display: none;
 }
 
-
-.section1Main{
-    text-align: center;
-    padding: 0 12rem;
+.section1Main {
+  text-align: center;
+  padding: 0 12rem;
 }
-.mainHeading{
-    margin-top: 8rem;
-    font-size: 48px;
-    margin-bottom: 1rem;
+.mainHeading {
+  margin-top: 8rem;
+  font-size: 48px;
+  margin-bottom: 1rem;
 }
 .section1Main p {
-    font-size: 22px;
-    color: #21191B;
+  font-size: 22px;
+  color: #21191b;
 }
-
 
 /* Section 2  */
 
-.section2{
+.section2 {
   margin: 5rem 0 5rem 5rem;
 }
 
-.section2Main{
+.section2Main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 100px;
 }
 
-.sec2gridLeft{
+.sec2gridLeft {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sec2gridLeftUl{
+.sec2gridLeftUl {
   list-style: none;
   margin-top: 2rem;
 }
 
-.sec2gridLeftUl li{
+.sec2gridLeftUl li {
   list-style: none;
   margin-bottom: 2rem;
 }
-.sec2gridLeft h2{
+.sec2gridLeft h2 {
   font-size: 32px;
   font-weight: 700;
 }
 
-.sec2gridRight{
+.sec2gridRight {
   display: flex;
   justify-content: center;
 }
@@ -132,12 +130,14 @@ form {
 .label {
   margin-bottom: 10px;
   font-size: 14px;
-  color: #21191B;
+  color: #21191b;
   line-height: 24px;
   font-weight: 600;
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
   padding: 10px;
   width: 100%;
   margin-bottom: 20px;
@@ -162,8 +162,8 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 form button {
   width: 100%;
-  padding: 12px 16px; 
-  background-color: #ED0331;
+  padding: 12px 16px;
+  background-color: #ed0331;
   color: white;
   border: none;
   border-radius: 5px;
@@ -203,7 +203,7 @@ form button:hover {
     background: #fff;
   }
 
-  .slideDown{
+  .slideDown {
     display: none;
     margin-top: 20px;
     padding-left: 40px;
@@ -213,7 +213,6 @@ form button:hover {
     height: 100vh;
     background: #fff;
   }
-  
 
   .slideDown ul {
     display: flex;
@@ -223,9 +222,8 @@ form button:hover {
     margin-top: 20px;
     list-style: none;
     align-items: flex-start;
-    
   }
-  
+
   .slideDown ul li a {
     text-decoration: none;
     color: #000;
@@ -234,16 +232,16 @@ form button:hover {
     text-transform: uppercase;
   }
 
-  .section1Main{
+  .section1Main {
     padding: 0;
   }
 
   /* section 2  */
 
-  .section2{
+  .section2 {
     margin: 5rem 1rem 1rem 1rem;
   }
-  .section2Main{
+  .section2Main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 100px;
