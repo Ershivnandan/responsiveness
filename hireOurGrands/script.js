@@ -6,7 +6,7 @@ hamburger.addEventListener("click", () => {
   if (!isopen) {
     hamburger.innerHTML = "";
     hamburger.innerHTML = `<i class="fa-solid fa-x"></i>`;
-    slideDown.style.display = "block";
+    slideDown.style.display = "block !important";
     isopen = true;
   } else {
     hamburger.innerHTML = "";

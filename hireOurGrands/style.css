@@ -46,7 +46,7 @@ nav {
   background: #fff;
 }
 .slideDown {
-  display: none;
+  display: none !important;
   display: block;
   z-index: 9;
 }
@@ -215,7 +215,7 @@ form button:hover {
   }
 
   .slideDown ul {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
