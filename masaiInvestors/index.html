@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Co-Founder & CEO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="main_heading">Strategic Investors</h2>
+      <div class="main_div" id="card_grid"></div>
+    </div>
+  </body>
+  <script>
+    const card_grid = document.getElementById("card_grid");
+    const data = [
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+      },
+      {
+        name: "Vijay Shekhar Sharma",
+        desgnation: "Founder & CEO",
+        logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg",
+      },
+    ];
+    console.log(data);
+    data.forEach((item) => {
+      const card = document.createElement("div");
+      card.className = "inner_div";
+
+      card.innerHTML = `
+          <img
+            src=${item.img}
+            alt=""
+          />
+          <div class="card_text">
+            <h2>${item.name}</h2>
+            <p>${item.desgnation}</p>
+              <img
+                src=${item.logo}
+                alt=""
+              />
+          </div>
+        `;
+
+      card_grid.appendChild(card);
+    });
+  </script>
+</html>
