@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsivenesss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <footer>
+        <div class="upper">
+          <div class="upper_container">
+            <div class="logo_div">
+              <img
+                src="https://i.ibb.co/cbRPYsX/Whats-App-Image-2024-09-28-at-12-04-53-AM.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="content">
+              <div>
+                <h3>shop</h3>
+                <p>Gift cards</p>
+                <p>Etsy Registry</p>
+                <p>Sitemap</p>
+                <p>Etsy blog</p>
+                <p>Etsy United Kingdom</p>
+                <p>Etsy Germany</p>
+                <p>Etsy Canada</p>
+              </div>
+              <div>
+                <h3>sell</h3>
+                <p>Sell on Etsy</p>
+                <p>Teams</p>
+                <p>Forums</p>
+                <p>Affiliates & Creators</p>
+              </div>
+              <div>
+                <h3>about</h3>
+                <p>Etsy, Inc.</p>
+                <p>Policies</p>
+                <p>Investors</p>
+                <p>Careers</p>
+                <p>Press</p>
+                <p>Impact</p>
+                <p>Legal imprint</p>
+              </div>
+              <div>
+                <h3>shop</h3>
+                <p>Gift cards</p>
+                <p>Etsy Registry</p>
+                <p>Sitemap</p>
+                <p>Etsy blog</p>
+                <p>Etsy United Kingdom</p>
+                <p>Etsy Germany</p>
+                <p>Etsy Canada</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main_drop_down">
+            <div class="drop_down">
+              <p class="accordion">shop</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="panel">
+              <p>Gift cards</p>
+              <p>Etsy Registry</p>
+              <p>Sitemap</p>
+              <p>Etsy blog</p>
+              <p>Etsy United Kingdom</p>
+              <p>Etsy Germany</p>
+              <p>Etsy Canada</p>
+            </div>
+
+            <div class="drop_down">
+              <p class="accordion">sell</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="panel">
+              <p>Sell on Etsy</p>
+              <p>Teams</p>
+              <p>Forums</p>
+              <p>Affiliates & Creators</p>
+            </div>
+
+            <div class="drop_down">
+              <p class="accordion">about</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="panel">
+              <p>Etsy, Inc.</p>
+              <p>Policies</p>
+              <p>Investors</p>
+              <p>Careers</p>
+              <p>Press</p>
+              <p>Impact</p>
+              <p>Legal imprint</p>
+            </div>
+            <div class="drop_down">
+              <p class="accordion">shop</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="panel">
+              <p>Gift cards</p>
+              <p>Etsy Registry</p>
+              <p>Sitemap</p>
+              <p>Etsy blog</p>
+              <p>Etsy United Kingdom</p>
+              <p>Etsy Germany</p>
+              <p>Etsy Canada</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lower_container">
+          <div class="lower_left">
+            <img src="https://i.ibb.co/fCMr792/india.png" alt="India" />
+            <p>India</p>
+            |
+            <p>England</p>
+            |
+            <p>₹ (INR)</p>
+          </div>
+          <div>
+            <div class="lower_right">
+              <ul>
+                <li>Twitter</li>
+                <li>Codepen</li>
+                <li>Email</li>
+                <li>Dribbble</li>
+                <li>Github</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>
